@@ -31,5 +31,22 @@
     pupil4 = Human.new("Μιχαηλ",16)
     pupil5 = Human.new("Michahel",16)
     school1 = Pupil.new(1)
-    school1.add_pupils(pupil1,pupil2,pupil3,pupil4,pupil5)
+    school1.add_pupils(pupil1)
+    school2 = Pupil.new(2)
+    school2.add_pupils(pupil2)
+    school3 = Pupil.new(3)
+    school3.add_pupils(pupil3)
+    school4 = Pupil.new(4)
+    school4.add_pupils(pupil4)
+    school5 = Pupil.new(5)
+    school5.add_pupils(pupil5)
+    puts "Ученики 1 школы :"
     p school1.pupils
+    puts "Ученики 2 школы :"
+    p school2.pupils
+    puts "Ученики 3 школы :"
+    p school3.pupils
+    puts "Ученики 4 школы :"
+    p school4.pupils
+    puts "Ученики 5 школы :"
+    p school5.pupils
