@@ -1,0 +1,10 @@
+<%= form_for @user do |f| %>
+<p> 
+<%= f.text_field :name %>
+</p>
+<p>
+<%= f.text_field :lastname %>
+</p>
+<%= f.text_field :email %>
+<%= f.submit "Создать пользователя" %>
+<% end %>
