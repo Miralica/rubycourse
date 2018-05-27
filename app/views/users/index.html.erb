@@ -1,0 +1,12 @@
+<h1>Список пользователей</h1>
+<% @users.each do |user| %>
+<p> <%= user.name + " " + user.lastname %> </p>
+<% end %>
+<%= link_to "Сортировать по имени", users_path(sort: "name") %>
+<%= link_to "↑↓", users_path(sort: "name DESC") %>
+<p><%= link_to "Сортировать по фамилии", users_path(sort: "lastname") %>
+<%= link_to "↑↓", users_path(sort: "lastname DESC") %></p>
+<p>
+<% link_   %>
+</p>
+<%= will_paginate @users %>
