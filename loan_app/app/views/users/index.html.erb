@@ -1,0 +1,5 @@
+<h1>Список пользователей</h1>
+<% @users.each do |user| %>
+<p> <%= user.name + " " + user.lastname %> </p>
+<% end %>
+<%= will_paginate @users %>
